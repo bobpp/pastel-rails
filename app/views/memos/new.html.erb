@@ -1,0 +1,13 @@
+<h3>New memo</h3>
+
+<% form_for(@memo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.text_area :body, :size => '95x25' %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
