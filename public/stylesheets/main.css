@@ -10,3 +10,7 @@ h3 {
   font-size: large;
 }
 
+pre {
+  overflow: scroll;
+}
+
