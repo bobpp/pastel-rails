@@ -17,6 +17,7 @@ class MemosController < ApplicationController
     @memo = Memo.find_by_access_key(params[:id])
 
     respond_to do |format|
+      format.text { render :text => @memo.body }
       format.html # show.html.erb
       format.xml  { render :xml => @memo }
     end
