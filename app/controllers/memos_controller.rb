@@ -2,12 +2,10 @@ class MemosController < ApplicationController
   # GET /memos
   # GET /memos.xml
   def index
-    @memos = Memo.all
     @memo = Memo.new
 
     respond_to do |format|
       format.html { render 'new' }
-      format.xml  { render :xml => @memos }
     end
   end
 
